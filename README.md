@@ -1,4 +1,4 @@
 # CSS-Practice
 Project For Modern CSS Practice
-#What I Learned(Blog Post)
-<a>What is clip path in CSS</a>
+# What I Learned(Blog Post)
+What is clip path in CSS
