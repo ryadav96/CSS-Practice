@@ -75,32 +75,63 @@ If all have same specificity??
 - If all selector have same specifity then last declaration is applied.
 
 ## CSS Parsing: Value Processing
+
 - Each CSS property has initial value.
 - Each CSS property need to have a value.
 - Default value of font-size is 16px.
 - Default padding is 0px.
 - actual value stored during rendering page
 - Some property that is related to text inherit computed value of root
-Declared Value(Author Declaration)
-Cascaded Value(After cascade)
-Specified Value(defaulting if there is no cascaded value)
-computed value: converting relative value to absolute
-Used value(Final calculation based on layout)
-Actual Value(Browser and device restriction)
+  Declared Value(Author Declaration)
+  Cascaded Value(After cascade)
+  Specified Value(defaulting if there is no cascaded value)
+  computed value: converting relative value to absolute
+  Used value(Final calculation based on layout)
+  Actual Value(Browser and device restriction)
 
 ### Value unit(rem)
+
 - rem is always uses root for reference.
 - em uses parent component for reference.
 - 10vh: 10% of viewport height
-- 10vw: 10% of viewport width 
-
+- 10vw: 10% of viewport width
 
 ### Inheritance
+
 - Each and every CSS property must have a value if not declared then browser will assign default value.
 - First browser will check if property has cascaded value or not? if yes then it will assign that value else it will check if this property can be inherited? if yes then it will assign computed value of parent element else initial value.
 - property related to text get inherited.
-- margin padding can not be inherited.  
+- margin padding can not be inherited.
 - computed value get inherited not declared value.
 - Inheritance of a property will work if no one(either browser or developer) declared the value.
 - inherit keyword forces to inheritence certain propert.
 - initial keywork used to resets a property to it initial value.
+
+# Day 5
+
+1. Why to change value from absolute to relative?
+   Change absolute value to rem so that you can modify all value by modfying on value.
+2. It is good practice to use rem.
+3. Always use relative value.
+4. Use .5 instead of 0.5 for good practice.
+5. Using px is not good practice.
+6. rem is not supported in IE below 9 version.
+
+## The Visual formatting Model
+
+Algorithm that calculates boxes and determines the layout of these boxes, for each element in the render tree, in order to determine the final layout of the page.
+Dimension of Boxes 
+Box type: inline, block, and inline-block
+Positioning scheme: floats or positioning
+Stacking contexts
+Other elements in render tree.
+View port size, dimention of images, etc.
+
+### How Box Model works?
+- First- Content: Text, images, etc.
+- Padding: Transparent area around inside the box.
+- Border
+- Margin: space between box
+- Fill Area: area that get filled with bg-color or bg-image.
+#### Height and Width of box mode
+If height or width is not defined then Visual formatting Model will uses content to define height. 
