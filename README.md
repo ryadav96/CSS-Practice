@@ -73,7 +73,34 @@ If all have same specificity??
 ### Order of Declaration
 
 - If all selector have same specifity then last declaration is applied.
-## CSS Parsing: Value Processing
 
+## CSS Parsing: Value Processing
+- Each CSS property has initial value.
 - Each CSS property need to have a value.
-- Default value of font-size is 16px. 
+- Default value of font-size is 16px.
+- Default padding is 0px.
+- actual value stored during rendering page
+- Some property that is related to text inherit computed value of root
+Declared Value(Author Declaration)
+Cascaded Value(After cascade)
+Specified Value(defaulting if there is no cascaded value)
+computed value: converting relative value to absolute
+Used value(Final calculation based on layout)
+Actual Value(Browser and device restriction)
+
+### Value unit(rem)
+- rem is always uses root for reference.
+- em uses parent component for reference.
+- 10vh: 10% of viewport height
+- 10vw: 10% of viewport width 
+
+
+### Inheritance
+- Each and every CSS property must have a value if not declared then browser will assign default value.
+- First browser will check if property has cascaded value or not? if yes then it will assign that value else it will check if this property can be inherited? if yes then it will assign computed value of parent element else initial value.
+- property related to text get inherited.
+- margin padding can not be inherited.  
+- computed value get inherited not declared value.
+- Inheritance of a property will work if no one(either browser or developer) declared the value.
+- inherit keyword forces to inheritence certain propert.
+- initial keywork used to resets a property to it initial value.
