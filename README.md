@@ -157,5 +157,17 @@ codepen-link https://codepen.io/ryadav96/pen/BaKNzvR?editors=0100
 
 ## NPM 
 All opensource library and tool are available. 
+live-server for 
 
 ## Implementing 7-1 design pattern
+(Scalable, maintanable architecture)
+- main.scss file should not have any code. It is used only to import other codes.
+
+Folder(All will be inside sass)
+1. base: Basic project defination
+2. abstracts: This folder will store code that don't output any CSS(Like: ariables, mixins..etc).
+3. components: will store all components. one file for each components.
+4. layout: global header, footer etc.
+5. pages: specific style for specific pages.
+6. Theme
+7. Venders: Third party styles
