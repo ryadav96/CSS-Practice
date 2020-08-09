@@ -135,3 +135,27 @@ View port size, dimention of images, etc.
 - Fill Area: area that get filled with bg-color or bg-image.
 #### Height and Width of box mode
 If height or width is not defined then Visual formatting Model will uses content to define height. 
+
+
+# Day 6
+
+## SASS
+SASS is  CSS Preprocessor, an extension of css that adds power, and elegence to the language.
+
+Variables: For reusable values such as colors, font-sizes, spacing, etc.
+Nesting: To nest selectors inside of one another, allowing us to write less code.
+Operators: For mathematical operations right inside of CSS.
+Partials and imports: to write CSS in different file and importing them all into one single file.
+Mixins: To write reusable pieces of CSS code.
+Functions: similar to mixins, with the difference that they produce a value that can than be used.
+Extends: To make different selectors inherit declarations that are common to all of them.
+Control directives: For writing complex code using conditions and loops.
+
+1. What $ sign do in SCSS?
+It write path to that variable.
+codepen-link https://codepen.io/ryadav96/pen/BaKNzvR?editors=0100
+
+## NPM 
+All opensource library and tool are available. 
+
+## Implementing 7-1 design pattern
