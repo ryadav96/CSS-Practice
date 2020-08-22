@@ -120,7 +120,7 @@ If all have same specificity??
 ## The Visual formatting Model
 
 Algorithm that calculates boxes and determines the layout of these boxes, for each element in the render tree, in order to determine the final layout of the page.
-Dimension of Boxes 
+Dimension of Boxes
 Box type: inline, block, and inline-block
 Positioning scheme: floats or positioning
 Stacking contexts
@@ -128,19 +128,22 @@ Other elements in render tree.
 View port size, dimention of images, etc.
 
 ### How Box Model works?
+
 - First- Content: Text, images, etc.
 - Padding: Transparent area around inside the box.
 - Border
 - Margin: space between box
 - Fill Area: area that get filled with bg-color or bg-image.
-#### Height and Width of box mode
-If height or width is not defined then Visual formatting Model will uses content to define height. 
 
+#### Height and Width of box mode
+
+If height or width is not defined then Visual formatting Model will uses content to define height.
 
 # Day 6
 
 ## SASS
-SASS is  CSS Preprocessor, an extension of css that adds power, and elegence to the language.
+
+SASS is CSS Preprocessor, an extension of css that adds power, and elegence to the language.
 
 Variables: For reusable values such as colors, font-sizes, spacing, etc.
 Nesting: To nest selectors inside of one another, allowing us to write less code.
@@ -151,19 +154,23 @@ Functions: similar to mixins, with the difference that they produce a value that
 Extends: To make different selectors inherit declarations that are common to all of them.
 Control directives: For writing complex code using conditions and loops.
 
-1. What $ sign do in SCSS?
-It write path to that variable.
-codepen-link https://codepen.io/ryadav96/pen/BaKNzvR?editors=0100
+1. What \$ sign do in SCSS?
+   It write path to that variable.
+   codepen-link https://codepen.io/ryadav96/pen/BaKNzvR?editors=0100
 
-## NPM 
-All opensource library and tool are available. 
-live-server for 
+## NPM
+
+All opensource library and tool are available.
+live-server for
 
 ## Implementing 7-1 design pattern
+
 (Scalable, maintanable architecture)
+
 - main.scss file should not have any code. It is used only to import other codes.
 
 Folder(All will be inside sass)
+
 1. base: Basic project defination
 2. abstracts: This folder will store code that don't output any CSS(Like: ariables, mixins..etc).
 3. components: will store all components. one file for each components.
@@ -171,3 +178,19 @@ Folder(All will be inside sass)
 5. pages: specific style for specific pages.
 6. Theme
 7. Venders: Third party styles
+
+# Day 7
+
+## Responsive design princuple
+1. ### Fluid grids and layouts
+To allow content to easily adapt to the current viewport width used to browse the website. Uses % rather than px for all layout-related lengths.
+
+2. ### Flexible/Responsive Images
+Images behave diffrently than text content, and so we need to ensure that they also adapt nicely to the current viewport.(We makes images responsive by defining their dimentions in %)
+
+3. ### Media queries
+Media queries allow us to develop different version of website for different device.
+
+## Building a grid system
+
+max-width: acheive this much width if it get space in viewport
