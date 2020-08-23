@@ -195,3 +195,14 @@ Media queries allow us to develop different version of website for different dev
 ## Building a grid system
 
 max-width: acheive this much width if it get space in viewport
+
+-webkit-background-clip: text;(Clip the background where text is there)
+
+. Keep reusable classes independent.
+ use utility for any variation from main.
+
+ 1. position absolute (these element will placed according to reference to the first parenty)
+ 2. z-index 
+ 3. positioning
+ 4. outline
+ 5. outline-offset
