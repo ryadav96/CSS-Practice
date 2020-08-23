@@ -8,7 +8,7 @@ What is clip path in CSS
 
 1. What box-sizing
    making box-sizing=border-box change to box model so that border and padding not get added.
-   clip-path
+   clip-path [My Blog about clip-path](https://jsbugpost.com/learn-clip-path-css-property-example-polygon-circle-ellipse/)
    we defines some quardinate of polygon
 
 # Day-2
