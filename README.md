@@ -206,3 +206,18 @@ max-width: acheive this much width if it get space in viewport
  3. positioning
  4. outline
  5. outline-offset
+
+ # Day 8
+
+ 1. Direct child selector
+ 2. select all direct child(*)
+ 3. sekey entire section and it child.
+ 4. using icon fonts
+ 8. RotateY
+ 9. perspective property
+ 10. How to put two div on top of each other using positioning.
+ 11. Using background-blend.
+ 12. box-decoration-break: clone;
+ 13. How to cetnter ul element in css?
+
+ centering block element inside the block element use margin: 0 auto;
